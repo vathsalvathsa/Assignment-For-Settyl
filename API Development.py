@@ -34,8 +34,4 @@ async def predict(item: Item):
     predicted_label = "internal_status_label_1" if prediction[0][0] >= 0.5 else "internal_status_label_2"
 
     return {"predicted_internal_status": predicted_label}
-# 6. Run the API with uvicorn 
 
-
-
-# uvicorn main:app --reload
