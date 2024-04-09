@@ -44,5 +44,12 @@ test_loss, test_acc = model.evaluate(X_test, y_test)
 print("Test Accuracy:", test_acc)
 
 # 6. Model Deployment
-model.save('D:/settel.h5') 
+model.save('D:/settel.h5')
+
+# 7. Model save
+import tensorflow as tf
+
+tf.keras.models.save_model(model, 'my_model.h5')
+
+
 
