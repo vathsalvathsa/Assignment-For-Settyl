@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
-df = pd.read_csv('D:/Settel().csv')
+df = pd.read_csv('D:/Settel.csv')
 
 # Clean the data
 df.dropna(inplace=True)
